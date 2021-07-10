@@ -1,0 +1,388 @@
+body, html{
+  padding: 0;
+  margin: 0;
+}
+
+body *{
+	transition: 0.5s;
+}
+
+body {
+  opacity: 0.7; 
+  font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	font-weight: normal;
+	line-height: 1.6em;
+}
+
+h1, h2, h3{
+  font-family: 'Russo One', sans-serif;
+}
+
+p {
+  font-family: 'Roboto Mono', monospace;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: 500;
+}
+
+
+.greeting-container {
+  width: 80%;
+  margin: 250px auto 200px auto;
+  text-align: center;
+}
+
+.greeting-container h1{
+  margin: 0 auto 0 auto;
+}
+
+.greeting-container .text {
+  font-size: 20px;
+}
+
+
+
+#skills {
+  margin: 100px 0 100px 0;
+}
+
+
+.parallax-top h1 , .parallax-top p{
+  text-align: center;
+  line-height: 1.5;
+  color: black;
+  vertical-align: center;
+}
+
+.parallax-top {
+  padding-top: 30%;
+  padding-left: 5%;
+  padding-right: 5%;
+  line-height: 1.5;
+  color: black;
+  vertical-align: center;
+  /* The image used */
+  background-image: url("images/whiteweb.jpg");
+  /* Full height */
+  min-height: 600px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.wrapper {
+  padding: 4em;
+  display: grid;
+  justify-content: center;
+  grid-auto-rows: minmax(200px, auto);
+  grid-template-columns: 1fr;
+  grid-row-gap: 4em;
+  grid-column-gap: 0;
+}
+
+
+@media only screen and (min-width:481px) {
+  .wrapper{
+    grid-auto-rows: minmax(250px, auto);
+    padding: 2em;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 4em;
+    grid-column-gap: 2em;
+  }
+}
+
+@media only screen and (min-width: 900px){
+  .wrapper{
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row-gap: 4em;
+    grid-column-gap:3em;
+  }
+}
+
+.wrapper div{
+  padding: 5%;
+  border-radius: 7%;
+  text-align: center;
+  line-height: 200px;
+}
+
+.grid-box p{
+  display: none;
+}
+
+.grid-box:hover .grid-text {
+  display: inline;
+  vertical-align: middle;
+  display: inline-block;
+  line-height: 1.5;
+}
+
+.grid-box1{
+  background-image: url("images/img6.gif");
+  background-size: cover;
+  background-position: center;
+}
+
+.grid-box1:hover{
+  background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url("images/img6.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+.grid-box2 {
+  background-image: url("images/violin1.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.grid-box2:hover{
+  background: linear-gradient(rgba(255, 255, 255, .5), rgba(255, 255, 255, .5)), url("images/violin1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.grid-box3 {
+  background-image: url("images/img3.gif");
+  background-size: cover;
+  background-position: center;
+}
+
+.grid-box3:hover {
+  background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url("images/img3.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+.grid-box4 {
+  background-image: url("images/poetry.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.grid-box4:hover {
+  background: linear-gradient(rgba(255, 255, 255, .5), rgba(255, 255, 255, .5)), url("images/poetry.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+
+.grid-box5 {
+  background-image: url("images/img8.gif");
+  background-size: cover;
+  background-position: center;
+}
+
+.grid-box5:hover {
+  background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url("images/img8.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+.grid-box6 {
+  background-image: url("images/blackeat.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.grid-box6:hover {
+  background: linear-gradient(rgba(255, 255, 255, .5), rgba(255, 255, 255, .5)), url("images/blackeat.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;   /*to cover entire div box*/
+  background-position: center;   /*so that image is centered*/
+}
+
+
+
+.parallax-bottom {
+  padding: 10% 5%;
+  align-items: center;
+
+  /* The image used */
+  background-image: url("images/computer.jpg");
+
+  /*to coverrt coloured image to black and white image*/
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%); 
+
+  /* Full height */
+  min-height: 600px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax-bottom-content {
+  border: 1px solid white;
+  background-color: black;
+  opacity: 0.7;
+  padding: 2%;
+}
+
+
+.parallax-bottom h1 , .parallax-bottom p{
+  text-align: center;
+  line-height: 1.5;
+  color: white;
+  vertical-align: center;
+}
+
+.parallax-bottom p{
+  padding: 5% 10%;
+}
+
+
+#projects {
+  margin: 2em 0 2em 0;
+  padding: 2%;
+  opacity: 1;
+}
+.post-wrapper {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, 320px);
+	gap: 60px;
+	justify-content: center;
+	padding-bottom: 50px;
+  border-radius: 8%;
+  border-radius: 8%;
+}
+
+.post {
+  border-radius: 8%;
+	-webkit-box-shadow: 3px 3px 3px 3px rgba(0,0,0,0.75);
+	-moz-box-shadow: 3px 3px 3px 3px rgba(0,0,0,0.75);
+	box-shadow: 3px 3px 3px 3px rgba(0,0,0,0.75);
+}
+
+.post:hover {
+	-webkit-box-shadow: 5px 3px 5px 5px rgba(0,0,0,0.75);
+	-moz-box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.75);
+	box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.75);
+}
+
+
+.thumbnail {
+	display: block;
+	object-fit: cover;
+  border-radius: 8%;
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%); 
+}
+
+.thumbnail:hover {
+  -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(0%); 
+	-webkit-box-shadow: 5px 3px 5px 5px rgba(0,0,0,0.75);
+	-moz-box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.75);
+	box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.75);
+}
+
+.post-preview {
+	background:white;
+	padding: 15px;
+  border-radius: 8%;
+}
+
+.post-title {
+	color: black;
+	font-size: 20px;
+	margin: 0;
+}
+
+.view-site {
+	color: black;
+	font-family: 'Roboto Mono', monospace;
+	font-size: 12px;
+
+}
+
+.view-site:hover {
+	font-size: 14px;
+}
+
+
+
+.parallax-last h1 , .parallax-last p{
+  text-align: center;
+  line-height: 1.5;
+  color: white;
+  vertical-align: center;
+}
+
+.parallax-last {
+  padding-top: 30%;
+  padding-left: 5%;
+  padding-right: 5%;
+  line-height: 1.5;
+  vertical-align: center;
+  /* The image used */
+  background-image: url("images/wind.gif");
+  /* Full height */
+  min-height: 600px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.share-box {
+  margin-top: 150px;
+  margin-bottom: 60px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 440px;
+  background-color:gray;
+  border-radius: 100px;
+  text-align:center;
+  align-items: stretch;
+  padding: 20px;
+  box-shadow: 10px 10px 15px #c7c4c4, -10px -10px 15px #fff;
+}
+
+.share-box a .icon {
+  padding: 10px;
+  font-size: 30px;
+  width: 35px;
+  height: 35px;
+  line-height: 20px;
+  overflow: hidden;
+  margin: 0 10px;
+  border-radius: 50px;
+  box-shadow: 5px 5px 5px #c7c4c4, -5px -5px 5px #fff;
+  color:darkgrey;
+}
+
+
+.share-box a .icon:hover{
+  color: white;
+  box-shadow: inset 5px 5px 10px #c7c4c4, inset -5px -5px 10px #fff;
+}
+
+
+
+
+
+
+
